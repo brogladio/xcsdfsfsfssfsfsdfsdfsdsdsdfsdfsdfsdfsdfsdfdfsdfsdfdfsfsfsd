@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Keys - GhostCheats</title>
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="keys-page">
+  <div class="noise"></div>
+
+  <header class="header">
+    <a href="index.html" class="logo">
+      <span class="logo-text">GhostCheats</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Store</a>
+      <a href="keys.html">Keys</a>
+      <a href="https://discord.gg/rmY3u5bA2Y" target="_blank" rel="noopener noreferrer">Support</a>
+    </nav>
+    <div class="header-actions">
+      <button type="button" class="btn-icon" id="headerAuthBtn" aria-label="Account">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+      </button>
+      <a href="index.html" class="btn btn-primary keys-header-btn">Back to Store</a>
+    </div>
+  </header>
+
+  <main class="keys-main">
+    <section class="keys-hero">
+      <div class="hero-bg">
+        <div class="hero-gradient"></div>
+        <div class="hero-mesh"></div>
+      </div>
+      <div class="container keys-hero-content">
+        <p class="hero-label">Instant Delivery</p>
+        <h1 class="hero-title">Your Product Keys</h1>
+        <p class="hero-desc" id="keysSubtitle">Verifying your payment and generating keys...</p>
+      </div>
+    </section>
+
+    <section class="keys-section">
+      <div class="container">
+        <article class="keys-card">
+          <div class="keys-state keys-state-loading" id="keysLoading">Loading order details...</div>
+          <div class="keys-state keys-state-error" id="keysError" hidden></div>
+
+          <div id="keysContent" hidden>
+            <div class="keys-summary">
+              <p>
+                <span>Order Total</span>
+                <strong id="keysTotal">$0.00</strong>
+              </p>
+              <p>
+                <span>Currency</span>
+                <strong id="keysCurrency">USD</strong>
+              </p>
+            </div>
+
+            <div class="keys-list" id="keysList"></div>
+
+            <div class="keys-note">
+              Save these keys now. You can also screenshot this page as proof of purchase.
+            </div>
+
+            <section class="keys-history" id="keysHistory">
+              <header class="keys-history-header">
+                <h3>All Keys Youve Generated</h3>
+                <p>Every key you have received, including previous purchases.</p>
+              </header>
+              <div class="keys-history-empty" id="keysHistoryEmpty" hidden>No previous keys yet.</div>
+              <div class="keys-list" id="keysHistoryList"></div>
+            </section>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Firebase (optional — needed only for real Google sign-in) -->
+  <!-- <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script> -->
+  <!-- <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script> -->
+  <!-- <script src="firebase-config.js"></script> -->
+  <script src="config.js"></script>
+  <script src="auth.js"></script>
+  <script src="keys.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GhostCheats — FiveM, Fortnite Cheats & Spoofers</title>
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.sell.app/embed/style.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="header">
+    <a href="#" class="logo">
+      <img src="assets/logo.png" alt="GhostCheats" class="logo-img" onerror="this.style.display='none'; document.getElementById('logoText').style.display='inline'" />
+      <span class="logo-text" id="logoText">GhostCheats</span>
+    </a>
+    <div class="header-right">
+      <div class="header-auth">
+        <span>Existing user?</span>
+        <a href="#" id="signInLink">Sign In</a>
+        <a href="#" class="btn-signup">Sign Up</a>
+      </div>
+      <div class="header-actions">
+        <button type="button" class="btn-icon" id="searchBtn" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <button type="button" class="btn-cart" id="cartBtn" aria-label="Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="success-banner" id="successBanner" role="alert" aria-live="polite" hidden>
+    <div class="success-banner-inner">
+      <h2>Payment received</h2>
+      <p class="success-banner-text" id="successBannerText">Your order is complete.</p>
+      <p class="success-banner-dl">Get your download: join our Discord for instant access and support.</p>
+      <a href="https://discord.gg/rmY3u5bA2Y" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Open Discord</a>
+      <button type="button" class="success-banner-close" id="successBannerClose" aria-label="Close">✕</button>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">Dominate Every Lobby <span class="highlight">Secure Every Win</span></h1>
+          <p class="hero-desc">The #1 Trusted cheat provider since 2021 offering high-quality, reliable products with the best 24/7 customer support.</p>
+          <div class="hero-btns">
+            <a href="#cheats" class="btn btn-primary btn-glow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              EXPLORE CHEATS
+            </a>
+            <a href="#" class="btn btn-dark">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              DMA PRODUCTS
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="assets/hero-red.png" alt="GhostCheats Character" class="hero-character" />
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <section class="filters" id="cheats">
+      <div class="container">
+        <div class="category-selection" id="categorySelection">
+          <div class="category-card active" data-category="fivem">
+            <img src="assets/fivem.jpg" alt="FiveM Cheats" />
+          </div>
+          <div class="category-card" data-category="fortnite">
+            <img src="assets/fortnite.jpg" alt="Fortnite Cheats" />
+          </div>
+          <div class="category-card" data-category="roblox">
+            <img src="assets/roblox.png" alt="Roblox Cheats" />
+          </div>
+          <div class="category-card" data-category="spoof">
+            <img src="assets/hwid.png" alt="Spoofers" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog">
+      <div class="container">
+        <div class="catalog-grid" id="catalogGrid"></div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta-card">
+          <h2>Never get banned.</h2>
+          <p>Get HWID spoofer updates, cheat bypasses & new drops first. No bullshit spam.</p>
+          <form class="newsletter" id="newsletterForm">
+            <input type="email" placeholder="your@email.com" required />
+            <button type="submit" class="btn btn-primary">Get Updates</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-backdrop" id="cartBackdrop"></div>
+    <div class="cart-panel">
+      <div class="cart-header">
+        <h2>Your Cart</h2>
+        <button type="button" class="btn-close" id="cartClose" aria-label="Close cart">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total</span>
+          <span class="cart-total-value" id="cartTotal">$0.00</span>
+        </div>
+        <button
+          type="button"
+          class="btn btn-primary btn-full"
+          id="checkoutBtn"
+          data-sell-store="74802"
+          data-sell-product="352940"
+          data-sell-theme=""
+          data-sell-darkmode="true"
+        >
+          Buy Now
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">GhostCheats</div>
+        <div class="footer-links">
+          <a href="https://discord.gg/rmY3u5bA2Y" target="_blank" rel="noopener noreferrer">Discord Support</a>
+          <a href="https://discord.gg/rmY3u5bA2Y" target="_blank" rel="noopener noreferrer">Refunds (24h)</a>
+          <a href="#">Cheat Status</a>
+          <a href="#">Reviews</a>
+        </div>
+        <p class="footer-copy">© 2025 GhostCheats. FiveM, Fortnite cheats & spoofers. Undetected or free resupply.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Firebase (optional — needed only for real Google sign-in) -->
+  <!-- <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script> -->
+  <!-- <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script> -->
+  <!-- <script src="firebase-config.js"></script> -->
+  <script src="config.js"></script>
+  <script src="key-pool.js"></script>
+  <script src="auth.js"></script>
+  <script src="script.js"></script>
+  <script src="https://cdn.sell.app/embed/script.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+# Paste your KeyAuth keys here, one per line.
+# Go to https://keyauth.cc/app/?page=licenses → create keys → copy them here.
+# The server will hand out one key per purchase and remove it from this file.
+# Lines starting with # are ignored.
+# Example:
+# ABCDEF-GHIJKL-MNOPQR-STUVWX
+KEYAUTH-RrWTdt-DqxHPF-uMHTi5-PVKXa1-KpD9ln-5DcKeq
+KEYAUTH-xLGxSl-LMtfCn-9vvY6L-VyGIrb-VrPaWt-8yMTUQ
+KEYAUTH-OaIK9n-NpfwX7-v342Zu-4m9zIO-DpLk3T-5dHpHo
+
